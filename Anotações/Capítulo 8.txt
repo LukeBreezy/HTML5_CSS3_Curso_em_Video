@@ -1,0 +1,71 @@
+######################
+##    CAPÍTULO 8    ##
+######################
+
+No HTML5 temos formas semânticas e não semânticas para deixar um trecho de texto em negrito / destaque e em itálico / enfâse
+(Semântico: com significado)
+
+Negrito / Destaque:
+    Negrito: <b>Aqui vai o texto em negrito</b> (Não semântico)
+    Destaque: <strong>Aqui vai o texto em destaque</strong> (Semântico)
+
+Itálico / Ênfase:
+    Itálico: <i>Aqui vai o texto em itálico</i> (Não semântico)
+    Ênfsse: <em>Aqui vai o texto com ênfase</em> (Semântico)
+
+
+Também é possivel marcar um trecho de texto, de forma semelhante ao um marcador de texto na vida real.
+Para isso usamos:
+
+<mark>Aqui vai o texto marcado</mark>
+
+
+Temos também as tags big e small, que como o próprio nome já diz, transaforma o texto em um texto grande ou pequeno.
+Vale lembrar que a tag big se tornou OBSOLETA, pois podemos aumentar o tamanho de um texto nos estilos.
+
+<big>Aqui vai o texto grande</big>
+<small>Aqui vai o texto pequeno</small>
+
+Outras tags:
+
+Texto deletado / riscado:
+    <del>Aqui vai o texto deletado</del>
+
+Texto inserido / sublinhado:
+    <ins>Aqui vai o texto inserido</ins> (Semântico)
+    <u>Aqui vai o texto sublinhado</u> (Não semântico)
+
+Texto sobrescrito:
+    <sup>Aqui vai o texto sobrescrito</sup>
+
+Text subscrito:
+    <sub>Aqui vai o texto subscrito</sub>
+
+Fonte mono-espaçada / Código-fonte:
+    Com a fonte mono-espaçada, cada caractere que selecionarmos, terá o mesmo tamanho.
+    <code>Aqui vai o texto mono-espaçado</code>
+
+Pré-Formatação:
+    Com a pré-formatação, é possível simular códigos em linguagem de programação como Python por exemplo. A tag <pre> permite que usemos quebras de linha e tabulações de forma simples, no mesmo layout de um programa comum.
+    <pre>
+    Aqui vai o texto
+        pré formatado
+    </pre>
+
+Citações:
+    As citações são deixam o texto entre quotes / aspas, mas de forma semântica.
+
+    Para citações simples usamos:
+        <q>Aqui vai a citação simples</q>
+
+    Para citações completas usamo:
+        <blockquote></blockquote>
+
+Abreviações:
+    As abreviações permite descrever o significado de uma sigla com HTML ou CSS por exemplo. Ao passarmos o cursor por cima da sigla, é possível ver do que se trata.
+    <abbr title="Aqui vai o significado do texto abreviado">Aqui vai o texto abreviado</abbr>
+    
+Texto invertido:
+    Para inverter o texto usamos a tag <bdo>, em dir nós indicamos se é ltr(left-to-right) ou rtl(right-to-left)
+
+    <bdo dir="rtl">Aqui vai o texto que será invertido</bdo>

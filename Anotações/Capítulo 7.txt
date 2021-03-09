@@ -1,0 +1,15 @@
+######################
+##    CAPÍTULO 7    ##
+######################
+
+Herarquia de Títulos
+
+
+As tags de títulos podem ser entendidas em níveis, pois são títulos e sub-títulos.
+
+1 - <h1>
+1.1 - <h2>
+1.1.1 - <h3>
+1.1.1.1 - <h4>
+1.1.1.1.1 - <h5>
+1.1.1.1.1.1 - <h6>

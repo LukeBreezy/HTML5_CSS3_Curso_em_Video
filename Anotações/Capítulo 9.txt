@@ -1,0 +1,69 @@
+######################
+##    CAPÍTULO 9    ##
+######################
+
+Para trabalharmos com listas, temos a opção de listas ordenadas e listas não ordenadas, <ol>(ordered-list) e <ul>(unordered-list) respectivamente.
+
+Ordenada
+Exemplo:
+    <ol>
+        <li>Chamar o Denis
+        <li>Verificar se ele ainda tem dúvidas
+        <li>Tirar as dúvidas
+        <li>Assistir
+    </ol>
+
+Dentro de <ol></ol> usamos a tag <li> que pode mas não precisa ser fechada, fica a vontade.
+
+
+Em <ol> temos o parâmetro type, que pode receber o tipo de ordenação (numerica, romanos, letras).
+E se quisermos começar essa lista mas não partir do início em sua ordem, podemos usar o parâmetro start.
+
+Exemplo:
+
+    <ol type="I" start="3">
+        <li>Chamar o Denis
+        <li>Verificar se ele ainda tem dúvidas
+        <li>Tirar as dúvidas
+        <li>Assistir
+    </ol>
+
+
+Não Ordenada:
+Exemplo:
+    <ul>
+        <li>PS5
+        <li>SmarTV
+        <li>DualSense
+        <li>Caixa de Som
+        <li>Notebook
+    </ul>
+
+Em <ul> temos o parâmetro type, que recebe o símbolo que irá acompanhar o item da lista.
+As opções são disc, circle ou square. Por padrão, <ul> usa disc.
+
+Exemplo:
+    <ul type="circle">
+        <li>PS5
+        <li>SmarTV
+        <li>DualSense
+        <li>Caixa de Som
+        <li>Notebook
+    </ul>
+
+
+
+Temos as listas de definições. É como se fosse um dicionário, temos os termos e as suas descrições.
+Para isso usamos três tags, <dl>(definition list), <dt>(definition term) e <dd>(definition description).
+
+Exemplo:
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação de hiper-texto para criação do conteúdo de um site</dd>
+
+        <dt>CSS</dt>
+        <dd>Linguagem para manipulação do design do site, através de folahs de estilo em cascata</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade em um site</dd>
+    </dl>

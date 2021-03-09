@@ -1,0 +1,35 @@
+Algumas tags
+
+    <h1></h1> - Título
+    <p></p> - Parágrafo
+    <hr> - Linha Horizontal
+    <br> - Quebra de Linha
+
+
+
+Uso de caracteres especiais
+
+<   - &lt;
+>   - &gt;
+    - &nbsp;
+®   - &reg;
+©   - &copy;
+TM  - &trade;
+€   - &euro;
+£   - &pound;
+¥   - &yen;
+¢   - &cent;
+∅   - &empty;
+∑   - &sum;
+Δ   - &Delta;
+δ   - &delta;
+←   - &larr;
+→   - &rarr;
+↑   - &uarr;
+↓   - &darr;     
+
+
+
+Comentario em HTML
+
+    <!--Aqui vai o comentario-->

@@ -1,0 +1,25 @@
+GIF - Animação e Transparência
+JPG - Alta compactação
+PNG - Compactação e Transaparência
+
+
+Para um site, é ideal ter imagens com boa qualidade, mas que não sejam tão grandes, para não deixar o site muito pesado na hora que o usuario acessar.
+Sendo assim, é necessário um tratamento com as imagens, para definir seu tamanho e qualidade, até que esteja da forma ideal.
+
+Para exibí-las no nosso arquivo .html, usamos a tag <img>, da seguinte forma:
+    <img src="caminho_da_imagem" alt="Texto Alternativo">
+
+E também podemos exibir imgens retiradas diretamente da internet, de forma quase igual:
+    <img src="url_da_imagem" alt="Texto Alternativo">
+
+
+
+Também podemos escolher um favicon, que basicamente é o icone de favorito, que aparece na aba do navegador.
+Para isso temos algumas opções:
+    favicon.cc
+    favicon.io
+    iconarchive.com
+
+
+Para inserir o favicon no html, usamos a tag link:
+    <link rel="shortcut icon" href="caminho_do_favicon" type="image/x-icon">

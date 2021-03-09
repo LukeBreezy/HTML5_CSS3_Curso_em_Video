@@ -1,0 +1,104 @@
+NCP - Network Control Protocol:
+	Como as maquinas tinham modelos difetentes, tornou-se necessario um mecanismo para fazer com que elas pudessem se comunicar entre si. Eis que surge o NCP
+
+
+IP - Internetworking Protocol:
+	Foi criado para poder fazer a identificação de maquinas
+	
+**************************************************************
+*TCP / IP - Transmission Control Protocol / Internet Protocol*
+**************************************************************
+
+
+HTTP - HyperText Tranfer Protocol
+
+
+
+PESQUISAR DEPOIS:
+	FTP
+	GOPHER
+	SMTP
+	POP3
+	IMAP
+
+
+
+
+-----------------------------------------------------------------------------------------
+
+Para o computador os 0 e 1 são ondas quadradas. E os valores binarios são basicamente bits.
+Então a menor medida para armazenar uma informação é o Byte, que é composto por 8 bits.
+Exemplo:
+	A letra "A" na tabela ASCII é representada pelo número 65. E 65 convertido para bínario fica "01000001".
+	Ou seja, tem 8 bits, e isso compõe 1 Byte
+
+
+
+MB != Mb
+MB == MegaByte (Usado para armazenamento: Pendrive, HD, SSD e etc)
+Mb == Megabit (Usado para transmissão: Internet, Placa de Rede, Velocidade de Rede e etc)
+
+
+
+
+* * * ACESSO A INTERNET * * *
+
+Para que a internet chegue ao computador, ela precisa passa por exemplo por um telefone, do telefone para um modem e por fim, do modem para o computador.
+
+Como mencionado acima, o computador entende ondas quadradas, e a internet transmite uma onda senoidal(ondulada).
+O computador não entende a onda transmitida pela internet, e a internet não entende a onda transmitida pelo computador.
+Então é necessário o modem que faz a MOdulação e DEModulação, ou seja:
+	Modulação - Transforma a onda quadrada para senoidal
+	Demodulção - Transforma a onda senoidal para quadrada
+
+
+
+Todo site na internet tem um endereço IP, que muda constantemente. E para que precisar acessar os sites atraves desse número, é usado o DNS (Domain Name System).
+O DNS é um local com servidores especiais, que contem endereços como "youtube.com" por exemplo.
+Quando dizemos ao navegador que queremos acessar o youtube, basicamente o que acontece é que o navegador diz ao servidor DNS que queremos acessar o youtube, e o DNS devolve o endereço IP atual do youtube, assim permitindo que nós possamos acessar o site.
+
+
+
+
+
+Capitulo 2 - Aula 2
+
+
+Dominio:
+	Nome único que o site terá;
+	O dominio geralmente é pago anualmente;
+	TLD - Top Level Domain:
+
+		GTLD - Generic TLD: (com, .net, .gov, .org, .io, .info, .online, .store e etc)
+
+		ccTLD - Country Code: TLD (.com.br, .edu.us, .co.fr, .jp, .es e etc) 
+
+
+Hospedagem:
+	Espaço para armazenar os arquivos;
+	A hospedagem geralmente é paga mensalmente;
+	Para escolher, é bom analisar espaço, memória, recursos e etc.
+
+
+
+URL - Uniform Resource Locator (Localizador de Recursos Único)
+
+Exemplo:
+
+	URL: "www.github.com/gustavoguanabara"
+
+	Sub-Domínio: www
+	Domínio: github.com
+	TLD: .com
+	Caminho: /gustavoguanabara
+
+
+	URL: "gustavoguanabara.github.io
+
+	Sub-Domínio: gustavoguanabara
+	Domínio: github.com
+	TLD: .io
+	Caminho: Não tem
+
+
+

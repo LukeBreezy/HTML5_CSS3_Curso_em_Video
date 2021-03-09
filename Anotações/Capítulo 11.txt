@@ -1,0 +1,86 @@
+#######################
+##    CAPÍTULO 11    ##
+#######################
+
+
+Para que o site se adapte ao tamanho da tela do usuario (celular, tablet, notebook, TV e etc), é indicado utilizar imagens dinamicas, que se adequam a cada caso.
+
+Para isso usamos a tag <picture>, juntamente com as tags <img> e <source>:
+
+Exemplo
+    <picture>
+        <source media="(max-width: 725px)" srcset="./imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1025px)" srcset="./imagens/foto-m.png" type="image/png">
+        <img src="./imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+
+Na tag <img> passamos qual imagem será aberta primordialmente, no caso será a imagem grande.
+
+Mas para se adaptar ao tamanho da tela, entra em ação a tag <source>, que deixa preparada a imagem pequena e a média. No parâmetro media, passamos o tamanho que indicará a mudança na imagem...
+
+Funciona mais ou menos assim:
+
+if tamanho_tela <= 725px:
+    exibir imagem pequena
+
+elif tamanho_tela <= 1025px:
+    exibir imagem média
+
+else:
+    exibir imagem grande
+
+
+No parâmetro srcset passamos o caminho até a imagem, e no type passamos o template para o tipo de arquivo, que podemos verificar no site "https://www.iana.org/assignments/media-types/media-types.xhtml". No caso do png é o image/png.
+
+
+
+Se tratando audio, usamos a tag <audio>, e passamos o caminho para o audio.
+
+Exemplo:
+    <audio src="midia/Awful - josh pan.mp3" autoplay controls></audio>
+
+na tag <audio> também podemos usar os parâmetros autoplay, que faz com que a música seja reproduzida automaticamente e controls que exibe um pequeno painel com comandos play / pause, volume e tempo.
+
+Infelizmente nem todos os navegadores aceitam determinados tipos de audio. Alguns podem não aceitar mp3 por exemplo.
+Para solucionar isso, podemos usar a tag <audio> juntamente com a tag <source>.
+
+Exemplo:
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/Awful - josh pan.mp3" type="audio/mpeg">
+        <source src="midia/Awful - josh pan.ogg" type="audio/ogg">
+        <source src="midia/Awful - josh pan.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não suporta a reprodução de áudio. <a href="midia/Awful - josh pan.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+    </audio>
+
+Na tag audio, temos o parametro preload, que tem 3 opções, auto(carrega todas as informações do audio, e o audio em si, mesmo que ainda não esteja sendo reproduzido), metadata(carrega apenas as informações do audio, como tempo de duração, mas não carrega o audio em si) e none(não carrega nem informação, nem o audio em si).
+Temos também os parâmetros já conhecidos, autoplay e controls.
+
+Já dentro da tag <audio> temos a tag <source> que vai indicar quais arquivos de audio devem ser porcurados. No exemplo temos 3, se o primeiro falhar, procura pelo segundo, se o segundo falhar, procura pelo terceiro, se o terceiro falhar, exibe a mensagem no <p> (No meu caso, a mensagem não aparece)
+
+Na tag <source> temos que passar o caminho até o audio, e no parâmetro type, colocamos o formato  de arquivo, que podemos novamente procurar no site "https://www.iana.org/assignments/media-types/media-types.xhtml".
+No caso do mp3 é o audio/mpeg.
+
+
+Para vídeos, o procedimento é basicamente o mesmo do audio.
+Exemplo:
+    <video preload="metadata" width="500" controls poster="imagens/basketball-capa.jpg">
+        <source src="midia/meu-video.m4v" type="video/mp4">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeo.</p>
+    </video>
+
+
+As únicas diferençãs são que agora usamos a tag <video>, e nela temos alguns outros parâmetros, como o poster, que coloca uma capa ao vídeo que será apresentado no site e o loop que fica repetindo o vídeo.
+Nas tags <source> apontamos o caminho até o arquivo, e informamos o formato do arquivo.
+
+Também podemos inserir vídeos que já estão na internet, no YouTube ou Vimeo por exemplo, assim não precisando armazenar os videos no nosso servidor local ou o do cliente.
+
+Isso pode ser feito através de emcorporamento. Só precisamos copiar o código de encorporamento do vídeo que queremos. Geralmente ele ja vem proto para inserir no código HTML.
+Exemplo:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZAL21_KMLa8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+Lembrando que todos as mídias que foram exemplificadas aqui, devem receber a devida atenção para direitos autorais.

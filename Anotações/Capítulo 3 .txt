@@ -1,0 +1,86 @@
+#################################
+## 	   CAPITULO 3 - AULA 1     ##
+#################################
+
+
+HTML - HyperText Markup Language (Conteúdo):
+	Textos, imagens, vídeos, tabelas...
+
+CSS - Cascading Style Sheets (Design):
+	Cores, sombras, tamanhos, posicionamento...
+
+JS - JavaScript (Interações):
+	Menus, animações, popups, validações...
+
+
+-------------------------------------------------------------------------------------
+##################
+# # #  HTML  # # #
+##################
+
+O HTML representa todo o conteúdo através de tags, que geralmente tem abertura e fechamento, mas algumas não tem.
+
+	Abertura: <nome_da_tag>
+	Fechamento: </nome_da_tag>
+
+Exemplos:
+	Título: <h1>Exemplo de Título</h1>
+	Parágrafo: <p>Exemplo de parágrafo</p>
+	Imagens: <img src="foto.png alt="Exemplo de foto">
+
+Na tag de imagens, temos alguns exemplos de parametros e valores, que são:
+	Parametros: src e alt (source e alternative)
+	Valores: "foto.png" e "Exeplo de foto" (nome ou caminho do arquivo e texto alternativo caso não encontre a imagem)
+
+
+
+
+#################
+# # #  CSS  # # #
+#################
+
+Em CSS tratamos o design dos elementos HTML através de seletores e definição de propriedades
+
+	Seletor: h1{}
+	Propriedades: font-size, font-family, color...
+
+Dentro do seletor, temos que fazer declarções que contem propriedades e valores.
+
+Exemplo:
+
+	h1{
+		font-family: Arial;
+		font-size: 20pt;
+		color: gray;
+	}
+
+-------------------------------------------------------------------------------------
+
+################################################
+# # #  ESTRUTURA BÁSICA DE DOCUMENTO HTML  # # #
+################################################
+
+<!DOCTYPE html>			(Indica que é um documento HTML5)
+<html lang="pt-br">		(Indica que o conteúdo do site será primordialmente em pt-br)
+
+	<head>				(Área de configurações)
+	
+		<meta charset="UTF-8">		(Garante compatibilidade para trabalhar com acentos por exemplo )
+		<meta name="viewport"
+		content="width=device-width,
+		initial-scale=1.0">			(Determina que o site vai abrir numa resolução padrão no navegador)
+
+		<title>Nome do Documento</title>	(Título do site)
+
+	</head>				
+
+	<body>				(Área de conteúdo)
+		<h1>Exemplo de título</h1>			(Como visto antes, é a tag para títulos no corpo do site)
+	</body>
+
+</html>
+
+
+
+
+
